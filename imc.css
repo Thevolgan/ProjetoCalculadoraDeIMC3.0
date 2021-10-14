@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+* body{ /*posição da caixa*/
+    margin: 0;
+    padding: 0;
+    background: rgb(85, 85, 85);
+    overflow-x: hidden; /*TIRA A BARRA DE SCROLL HORIZONTAL*/
+    overflow-y: hidden;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner{ /*tamanho da caixa*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(23, 131, 117);
+    width: 300px;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #000;
+}
+
+.title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 130px;
+    background: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #000;
+    user-select: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 19px;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: #000;
+}
+
+.input input{
+    width: 170px;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+    outline: 0;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background: rgb(85, 85, 85);
+    box-shadow: 2px 2px 15px #000;
+}
+
+.input label{
+    color: #000;
+}
+
+.label{
+    padding: 10px;
+    margin-left: -30px;
+}
+
+#calcular{
+    text-decoration: none;
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background: rgb(85, 85, 85);
+    box-shadow: 2px 2px 15px #000;
+}
+
+@keyframes animation1{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#calcular:hover{
+    cursor: pointer;
+    animation-name: animation1;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    background: rgb(24, 5, 146);
+}
+
+.footer{
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer1{
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    color: rgb(190, 145, 190);
+}
